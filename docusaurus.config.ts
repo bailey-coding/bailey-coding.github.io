@@ -1,49 +1,50 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: "My Site",
+  tagline: "Dinosaurs are cool",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://bailey-coding.github.io',
+  url: "https://bailey-coding.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'bailey-coding', // Usually your GitHub org/user name.
-  projectName: 'bailey-coding.github.io', // Usually your repo name.
+  organizationName: "bailey-coding", // Usually your GitHub org/user name.
+  projectName: "bailey-coding.github.io", // Usually your repo name.
+  deploymentBranch: "main", // Usually your branch.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: false,
         blog: {
-          routeBasePath: '/',
+          routeBasePath: "/",
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/bailey-coding/bailey-coding.github.io/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/bailey-coding/bailey-coding.github.io/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -51,62 +52,62 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: 'My Site',
+      title: "My Site",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "My Site Logo",
+        src: "img/logo.svg",
       },
       items: [
-        {to: '/', label: 'Blog', position: 'left'},
+        { to: "/", label: "Blog", position: "left" },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/facebook/docusaurus",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
+        // {
+        //   title: "Docs",
+        //   items: [
+        //     // {
+        //     //   label: "Tutorial",
+        //     //   to: "/docs/intro",
+        //     // },
+        //   ],
+        // },
         {
-          title: 'Docs',
+          title: "Community",
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
+            // {
+            //   label: "Stack Overflow",
+            //   href: "https://stackoverflow.com/questions/tagged/docusaurus",
+            // },
+            // {
+            //   label: "Discord",
+            //   href: "https://discordapp.com/invite/docusaurus",
+            // },
+            // {
+            //   label: "Twitter",
+            //   href: "https://twitter.com/docusaurus",
+            // },
           ],
         },
         {
-          title: 'Community',
+          title: "More",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Blog",
+              to: "/",
             },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+            // {
+            //   label: "GitHub",
+            //   href: "https://github.com/facebook/docusaurus",
+            // },
           ],
         },
       ],

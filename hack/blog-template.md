@@ -1,4 +1,5 @@
 ---
+# https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog#markdown-front-matter
 slug: { { slug } }
 title: { { title } }
 tags:

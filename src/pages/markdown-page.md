@@ -1,4 +1,5 @@
 ---
+# https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-pages#markdown-front-matter
 title: Markdown page example
 ---
 
